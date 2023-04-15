@@ -1,0 +1,65 @@
+#sobre{
+
+	background-color: #272a35;
+}
+.container-img{
+    
+display: flex;
+	padding-top: 150px;
+}
+.container-img img{ 
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+	border-radius: 20px;
+}
+.text{
+	margin: 20px;
+}
+.text h1{
+	
+	color: white;
+}
+.text p{
+
+	margin-bottom: 20px;
+	color: #8b8f84;
+}
+span{
+	color: white;
+}
+.container-list{
+	text-align: center;
+	margin-top: -60px;
+	margin-left: -570px;
+
+	
+}
+.container-list img{
+	
+    margin-right: 5px;
+	filter: invert(1);
+	width: 25px;
+	transition: 0.2s ease-out;
+}
+
+
+.container-list img:hover{
+	text-decoration: none;
+	transform: translate(1%, 10%);
+}
+img{
+
+}
+@media screen and (max-width: 500px) {
+
+	.container-img img{
+		display: none;
+	}
+	.text{
+		text-align: left;
+		
+	}
+	.container-list{
+		margin-top: 80px;
+		margin-left: -10px;
+	}
+}

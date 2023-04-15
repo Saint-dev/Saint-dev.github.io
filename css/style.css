@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+	background-color: #1d1e26;
+}
+
+.container {
+	max-width: 1400px;
+	padding: 2%;
+	margin: 1px;
+}
+
+nav {
+	z-index: -3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4.0em;
+}
+
+nav ul {
+	position: fixed;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	color: white;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.menu {
+	position: relative;
+	padding-bottom: 8px;
+	cursor: pointer;
+}
+
+.menu::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: "";
+	width: 0%;
+	height: 1px;
+	background-color: #4c3481;
+	transition: width 0.5s ease-out;
+}
+
+nav ul li a:hover {
+	color: #4c3481;
+}
+
+.menu:hover.menu::after {
+	width: 100%;
+}
+
+section {
+	min-height: 100vh;
+}
+
+.container-ab h1:after {
+	content: '|';
+	margin-left: 5px;
+	animation: pisca 0.7s infinite;
+}
+
+.container-ab {
+	padding-bottom: 10px;
+	color: white;
+	font-size: 30px;
+	margin-top: 180px;
+}
+
+.container-ab p {
+	padding-bottom: 10px;
+	color: #8b8f84;
+}
+.container-list a{
+	text-decoration: none;
+}
+
+.container-botao {
+	margin-top: 30px;
+	box-shadow: #4c3481 5px 5px 20px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+	border-radius: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 150px;
+	background-color: #4c3481;
+	transition: 0.4s;
+}
+
+.container-botao p {
+	color: white;
+}
+
+.container-botao::after {
+	background-color: black;
+}
+
+.container-botao:hover {
+	box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+	transform: translate(0px, 1px);
+	background-color: white;
+	color: #4c3481;
+}
+
+.container-botao:hover p {
+	color: #4c3481;
+}
+
+.container-cod {
+	margin-top: -280px;
+	margin-left: 490px;
+}
+
+@keyframes pisca {
+	0%, 100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+}
+
+@media screen and (max-width:500px) {
+	.container-cod {
+		display: none;
+	}
+
+}
