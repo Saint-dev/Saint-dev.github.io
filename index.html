@@ -17,7 +17,7 @@
     <main>
         <section id="home">
 
-            <div class="container">
+            <div  class="container">
                 <nav>
                     <ul>
                         <li class="menu">
@@ -104,9 +104,10 @@
                             data.map(item => {
                                 let li = document.createElement('li')
 
-                                li.innerHTML = `
+let url = item.has_pages ? `https://saint-dev.github.io/${item.name}` : item.html_url 
+li.innerHTML = `
        
-        <a href="${item.html_url}" target="_blank"> <h2>${item.name.toUpperCase()}</h2></a> 
+        <a href="${url}" target="_blank"> <h2>${item.name.toUpperCase()}</h2></a>
 
       `
                                 ul.appendChild(li)
@@ -117,6 +118,8 @@
                 }
 
                 getApiGitHub()
+
+
                 </script> 
 
             </div>
@@ -124,7 +127,6 @@
                 <div class="container-la">
                    <a href="#home"><img src="./Assents/android-chrome-512x512.png" width="40" alt="logo"></a>                 
                 </div>
-                <br>
                 <div class="textp"> <a href=""><p>Open source project</p></a></div>
                
 
