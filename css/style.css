@@ -133,10 +133,11 @@ section {
 	margin-top: -280px;
 	margin-left: 490px;
 }
+
 #sp1{
 	color: #2aa9df ;
 }
-.container-ab h6{
+h6{
 	color: #f26527;
 }
 @keyframes pisca {
