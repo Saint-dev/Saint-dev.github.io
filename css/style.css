@@ -5,6 +5,7 @@ html {
 }
 
 * {
+
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -12,6 +13,7 @@ html {
 }
 
 body {
+	overflow: hidden;
 	background-color: #1d1e26;
 }
 
@@ -131,7 +133,12 @@ section {
 	margin-top: -280px;
 	margin-left: 490px;
 }
-
+#sp1{
+	color: #2aa9df ;
+}
+.container-ab h6{
+	color: #f26527;
+}
 @keyframes pisca {
 	0%, 100% {
 		opacity: 1;
