@@ -17,7 +17,7 @@
     <main>
         <section id="home">
 
-            <div  class="container">
+            <header  class="container">
                 <nav>
                     <ul>
                         <li class="menu">
@@ -35,13 +35,13 @@
                 <div class="container-ab">
                     <h1>Lucas g, Saint</h1>
                     <p>Hello, my Name Is Lucas. <br> I'm a front end developer.</p>
-                    <h6>HTML / CSS</h6>
+                    <h6><span id="s">HTML </span>/ <span>CSS</span></h6>
                 </div>
                 <script type="text/javascript" src="script.js"></script>
                 <a href="#sobre">
                     <div class="container-botao">
                         <p>About me</p>
-                    </div>
+                    </header>
 
                 </a>
             </div>
@@ -53,19 +53,18 @@
         </section>
         <section id="sobre">
 
-<head>
-    <title>swnnjd</title>
-</head>
-            <div class="container">
+            <header class="container">
                 <div class="container-img">
                     <img src="./Assents/Captura de tela_2023-04-14_01-01-32.png" alt="">
-                    <div class="text">
+                    <aside class="text">
                         <h1>Hey, I'm lucas </h1>
                         <p>Well, my name is lucas, <br>or rather saint (Lucas g, saint),<br> I'm a front end programmer. <br> I live in Brazil, yes I am 16 years old, <br> I hope you are enjoying the site. <br> </p>
                         <p> <span>I love</span> sublime text because it is light <br> and accessible, I like anime <br> specifically one piece. <br> I like to be in peace</p>
                         <p><span>I like </span>playing ball, I love learning new things.<br> like listening to music <br> these are some of my definitions. </p>
-                    </div>
-                </div>
+                    </aside>
+                </header>
+                    
+               
             </div>
 
             <div  class="container-list">
@@ -108,7 +107,6 @@ let url = item.has_pages ? `https://saint-dev.github.io/${item.name}` : item.htm
 li.innerHTML = `
        
         <a href="${url}" target="_blank"> <h2>${item.name.toUpperCase()}</h2></a>
-
       `
                                 ul.appendChild(li)
 
@@ -123,14 +121,8 @@ li.innerHTML = `
                 </script> 
 
             </div>
-            <section id="diretos">
-                <div class="container-la">
-                   <a href="#home"><img src="./Assents/android-chrome-512x512.png" width="40" alt="logo"></a>                 
-                </div>
-                <div class="textp"> <a href=""><p>Open source project</p></a></div>
+            
                
-
-            </section>
     </main>
 </body>
 

@@ -1,9 +1,10 @@
 #projetos {
-
+	
 	background-color: ##272a35;
 }
 
 .container-projetos {
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,6 +13,7 @@
 }
 
 .container-projetos h1 {
+
 	color: white;
 	font-size: 40px;
 }
@@ -22,18 +24,20 @@
 }
 
 .container-projetos ul {
+        
 }
 
 hr {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
-#ul2 {
+#ul2 {	
 	list-style: none;
 }
 
 #ul2 li {
-	margin-bottom: 10px;
+
+	margin-bottom: 20px;
 }
 
 .container-projetos h2 {
@@ -41,34 +45,23 @@ hr {
 }
 
 hr {
-	border-top: 2px;
+	border-top:30px;
 }
-#diretos {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 100px;
-	background-color: rgba(0, 0, 0, 0.15);
-	min-height: 10vh;
+
+.projects-list{
+	max-width: 100%;
+    height: auto;
+    overflow: scroll;
 }
-.container-la{
-	text-align: center;
-	margin-right: 10px;
-}
-.textp p{
-	
-	color: white;
-}
+
+
 
 @media screen and (max-width:500px) {
 	.container-projetos h1 {
 		text-align: center;
 		font-size: 30px;
 	}
-	#diretos {
 
-	margin-top: 120px;
-}
 .container-projetos{
 	margin-top: -0px;
 }
