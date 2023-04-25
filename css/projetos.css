@@ -32,11 +32,14 @@ hr {
 }
 
 #ul2 {	
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px;
+	gap: 10px;
 	list-style: none;
 }
 
 #ul2 li {
-
 	margin-bottom: 20px;
 }
 
